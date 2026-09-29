@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+/* Hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    mask-image: url("assets/hero/mask.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    img{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .reserva{
+        width: 40%;
+        height: auto;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Sliders */
+.sliders{
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.sliders img{
+    width: 350px;
+    height: 450px;
+    padding: 0px 5px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+
+    .reserva{
+        width: 80%;
+        height: auto;
+    }
+}
